@@ -123,6 +123,7 @@ namespace Client
             this.MaximizeBox = false;
             this.Name = "MainChat";
             this.Text = "Chat";
+            this.Load += new System.EventHandler(this.MainChat_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

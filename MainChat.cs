@@ -55,7 +55,7 @@ namespace Client
             {
                 if (!textBox3.Text.Equals(""))
                 {
-                    chat.Add("gol");
+                    chat.Add("chat");
                     chat.Add(textBox3.Text);
                     byte[] outs = ObiectToByte(chat);
                     stream.Write(outs, 0, outs.Length);
@@ -228,6 +228,11 @@ namespace Client
         {
             textBox1.SelectionStart = textBox1.TextLength;
             textBox1.ScrollToCaret();
+        }
+
+        private void MainChat_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
